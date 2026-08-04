@@ -1,25 +1,53 @@
-HELP.md
+# ==========================================
+# Maven
+# ==========================================
 target/
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# ==========================================
+# Spring Boot
+# ==========================================
+HELP.md
+
+# Environment-specific configuration
+src/main/resources/application-local.properties
+src/main/resources/application-dev.properties
+src/main/resources/application-prod.properties
+
+# Optional env files
+.env
+.env.*
+
+# ==========================================
+# IntelliJ IDEA
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ==========================================
+# Eclipse / STS
+# ==========================================
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# ==========================================
+# VS Code
+# ==========================================
+.vscode/
 
-### NetBeans ###
+# ==========================================
+# NetBeans
+# ==========================================
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +57,48 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# ==========================================
+# Java
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Mac
+# ==========================================
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# Linux
+# ==========================================
+*~
+
+# ==========================================
+# Generated Files
+# ==========================================
+generated/
