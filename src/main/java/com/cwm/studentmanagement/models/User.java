@@ -1,10 +1,12 @@
 package com.cwm.studentmanagement.models;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "users")
-public class Users {
+@Data
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
